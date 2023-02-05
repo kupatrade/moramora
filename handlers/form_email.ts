@@ -16,7 +16,6 @@ export async function form_email(data: CreateTextEmailData): Promise<void> {
     from: process.env.NODEMAILER_FROM,
     to: process.env.NODEMAILER_TO,
     subject: process.env.NODEMAILER_SUBJECT,
-    // text: process.env.NODEMAILER_TEXT,
     text: `
     Name: ${data.name}
     Phone: ${data.phone}
