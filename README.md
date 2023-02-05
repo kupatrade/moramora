@@ -16,6 +16,34 @@ Build:
 ```bash
 npm run build
 ```
+Docker image:
+
+```bash
+COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build
+```
+Docker save image to moramora.tar:
+
+```bash
+docker save -o ./moramora.tar moramora-moramora
+```
+Copy archive and docker-compose file to server folder:
+Your folder can have another name
+
+```bash
+    cp -R moramora.tar //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
+```
+Full: 
+
+```bash
+    npm run build && COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build && cp -R moramora.tar //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
+```
+Start container:
+
+```bash
+    docker-compose up -d
+```
+
+
 
 ## Learn More
 
