@@ -35,7 +35,7 @@ Your folder can have another name
 Full: 
 
 ```bash
-    npm run build && COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build && cp -R moramora.tar //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
+    npm run build && COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build && docker save -o ./moramora.tar moramora-moramora && cp -R moramora.tar //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
 ```
 Start container:
 
