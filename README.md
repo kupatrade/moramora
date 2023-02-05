@@ -32,10 +32,17 @@ Your folder can have another name
 ```bash
     cp -R moramora.tar //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
 ```
+
+Copy docker files: 
+
+```bash
+    cp -R .dockerignore //server-kupa/dev_m && cp -R Dockerfile //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
+```
+
 Full: 
 
 ```bash
-    npm run build && COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build && docker save -o ./moramora.tar moramora-moramora && cp -R moramora.tar //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
+    npm run build && cp -R .dockerignore //server-kupa/dev_m && cp -R Dockerfile //server-kupa/dev_m && cp -R docker-compose.yml //server-kupa/dev_m
 ```
 Start container:
 

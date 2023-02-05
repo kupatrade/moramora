@@ -28,7 +28,6 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
-additional.d.ts
 # vercel
 .vercel
 
@@ -40,3 +39,4 @@ Dockerfile
 /public/
 Makefile
 .dockerignore
+moramora.tar
