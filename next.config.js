@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 require('dotenv').config()
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   env: {
     PUBLIC_META_URL: process.env.PUBLIC_META_URL
   }

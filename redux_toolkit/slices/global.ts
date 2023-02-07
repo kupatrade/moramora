@@ -7,7 +7,7 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 const initialState: GlobalInit = {
     navbar: false,
     language: check_language(),
-    theme: check_theme(),
+    theme: "dark", //check_theme()
 };
 
 const globalSlice = createSlice({
