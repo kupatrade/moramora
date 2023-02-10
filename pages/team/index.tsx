@@ -1,9 +1,12 @@
 import { MainLayout } from "../../layouts/MainLayout"
+import { ContentContainer } from "@/components/Container/ContentContaeiner"
 
 export default function Team() {
     return (
         <MainLayout>
-            <div>Hello Team</div>
+            <ContentContainer>
+                Team
+            </ContentContainer>
         </MainLayout>
     )
 }

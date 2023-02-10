@@ -1,11 +1,11 @@
 import { MainLayout } from "../../layouts/MainLayout"
 import { ContentContainer } from "@/components/Container/ContentContaeiner"
 
-export default function About() {
+export default function WhatWeDo() {
     return (
         <MainLayout>
             <ContentContainer>
-                About
+                What we Do
             </ContentContainer>
         </MainLayout>
     )

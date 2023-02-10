@@ -1,0 +1,127 @@
+@import "./styles";
+
+
+
+.menu_container {
+    @extend %show-menu;
+    width: 100%;
+    height: 100%;
+    background: $footer-background;
+    color: $footer-text-color;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+        background: $footer-background;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $html-background;
+    }
+
+    [class*="container_content_container"] {
+        width: 100%;
+        height: 100%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: $phone) {
+            &::-webkit-scrollbar {
+                width: 3px;
+                height: 3px;
+            }
+        }
+    }
+
+
+    .close_box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        svg {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+
+            @media(max-width: $large) {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    .nav_menu {
+        width: max-content;
+
+        @media(hover: hover) {
+            &:hover {
+                p:not(:hover) {
+                    background-position: 0 100%;
+                }
+            }
+        }
+
+        p {
+            font-size: 72px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(to left, $footer-text-color, $footer-text-color 50%, $footer-text-color-opacity 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            background-position: -100%;
+            transition: all .7s ease;
+            text-decoration: none; // text decorations are clipped in WebKit browsers
+
+            @media(hover: hover) {
+                &:hover {
+                    transform: translateX(50px);
+
+                }
+            }
+
+            @media(max-width: $phone) {
+                font-size: 60px;
+            }
+
+            @media(max-width: 420px) {
+                font-size: 48px;
+            }
+
+            @media(max-width: 370px) {
+                font-size: 40px;
+            }
+
+            @media(max-width: $small-phone) {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .lang_box {
+        padding: 50px 0;
+
+        p {
+            cursor: pointer;
+            font-size: 20px;
+            color: $dark-grey;
+
+            @media(max-width: $extra-large) {
+                font-size: 18px;
+            }
+
+            @media(max-width: $small-phone) {
+                font-size: 14px;
+            }
+        }
+
+        p[data-lang="active"] {
+            color: $footer-text-color;
+        }
+    }
+}

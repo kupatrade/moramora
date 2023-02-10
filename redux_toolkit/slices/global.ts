@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { GlobalInit } from '../../interfaces/slices/global'
 import { check_language } from '../../handlers/check_language'
 import { check_theme } from '../../handlers/check_theme'
+import { AnswerCheckLanguage } from '@/interfaces/interface';
 import type { PayloadAction } from '@reduxjs/toolkit'
 
 const initialState: GlobalInit = {
@@ -24,8 +25,11 @@ const globalSlice = createSlice({
                 window.localStorage.setItem("theme", "light")
             }
         },
-        setLanguage: (state, action: PayloadAction<string>) => {
+        setLanguage: (state, action: PayloadAction<AnswerCheckLanguage>) => {
             state.language = action.payload
+        },
+        setNavbar: (state, action: PayloadAction<boolean>) => {
+            state.navbar = action.payload
         },
     },
 });

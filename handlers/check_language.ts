@@ -1,7 +1,7 @@
-export const check_language = (): string => {
+import { AnswerCheckLanguage } from "@/interfaces/interface"
+export const check_language = (): AnswerCheckLanguage => {
     if (typeof window !== "undefined") {
-        return localStorage.getItem('lang') as string || 'en'
-
+        return localStorage.getItem('lang') as AnswerCheckLanguage || 'en'
     }
     return "en"
 }

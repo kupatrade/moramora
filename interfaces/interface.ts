@@ -8,3 +8,11 @@ export interface CreateTextEmailData {
     email: string,
     message: string
 }
+
+export interface Inav {
+    hidden: boolean,
+    title: string,
+    url: string
+}
+
+export type AnswerCheckLanguage = "rus" | "en"
