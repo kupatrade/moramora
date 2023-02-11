@@ -27,6 +27,9 @@ const globalSlice = createSlice({
         },
         setLanguage: (state, action: PayloadAction<AnswerCheckLanguage>) => {
             state.language = action.payload
+            if (typeof window !== "undefined") {
+                localStorage.setItem('lang', action.payload)
+            }
         },
         setNavbar: (state, action: PayloadAction<boolean>) => {
             state.navbar = action.payload

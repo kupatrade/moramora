@@ -3,7 +3,6 @@ import { metadata } from "../data/meta"
 import { useAppSelector } from '@/hooks/useRedux'
 import { Header } from '@/components/Header/Header'
 import { Footer } from '@/components/Footer/Footer'
-import { Menu } from '@/components/Menu/Menu'
 
 interface MainLayoutProps {
     title?: string,
@@ -16,7 +15,7 @@ export const MainLayout = ({
     title = metadata.main.title,
     description = metadata.main.description
 }: MainLayoutProps) => {
-    const { theme, navbar } = useAppSelector(state => state.global)
+    const { theme } = useAppSelector(state => state.global)
     return (
         <>
             <Head>
@@ -53,7 +52,6 @@ export const MainLayout = ({
                     {children}
                 </section>
                 <Footer />
-                {navbar ? <Menu /> : false}
             </main>
         </>
     )

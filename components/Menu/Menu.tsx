@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { ContentContainer } from '@/components/Container/ContentContaeiner'
 import { Modal } from '../Modal/Modal'
@@ -10,6 +11,7 @@ export const Menu = () => {
     const router = useRouter()
     const { setNavbar, setLanguage } = useActions()
     const navData = useNav({ hidden: false })
+    const containerRef = useRef<HTMLInputElement>(null);
 
     const close = (p: string | undefined): void => {
         const elemMenu = document.getElementById("menu")
@@ -20,13 +22,20 @@ export const Menu = () => {
                 if (p) {
                     router.push(p)
                 }
-            }, 1000)
+            }, 980)
         }
     }
-
+    const keyHandler = (e: React.KeyboardEvent): void => {
+        if (e.code === "Escape") {
+            close(undefined)
+        }
+    }
+    useEffect(() => {
+        containerRef.current?.focus()
+    }, [])
     return (
         <Modal>
-            <div id={"menu"} className={styles.menu_container}>
+            <div ref={containerRef} tabIndex={0} onKeyDown={keyHandler} id={"menu"} className={styles.menu_container}>
                 <ContentContainer>
                     <div className={styles.close_box}>
                         <svg onClick={() => close(undefined)} width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

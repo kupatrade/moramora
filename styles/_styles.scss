@@ -13,6 +13,24 @@
     src: url("../public/font/poppins/Poppins-Bold.ttf");
 }
 
+@font-face {
+    font-family: 'GolosTextWebRegular';
+    src:
+        url('../public/font/Golos-Text-Regular.web/PT/PT/Golos-Text/golos-text_regular.woff2') format('woff2'),
+        url('../public/font/Golos-Text-Regular.web/PT/PT/Golos-Text/golos-text_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GolosTextWebMedium';
+    src:
+        url('../public/font/Golos-Text-Medium.web/PT/PT/Golos-Text/golos-text_medium.woff2') format('woff2'),
+        url('../public/font/Golos-Text-Medium.web/PT/PT/Golos-Text/golos-text_medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $extra-large: 1440px;
 $large: 1000px;
 $pad: 768px;
@@ -27,9 +45,9 @@ $footer-text-color: #FAFAFA;
 $footer-text-color-opacity: rgba(250, 250, 250, 0.5);
 $dark-grey: #505050;
 $menu-btn-color: #25282B;
-$poppis-medium: "Poppins-Medium";
-$poppis-light: "Poppins-Light";
-$poppis-bold: "Poppins-Bolds";
+$poppis-medium: var(--font-medium);
+$poppis-light: var(--font-light);
+$default-font: "Poppins-Light";
 
 %show-menu {
     animation: showmenu 1s 1;

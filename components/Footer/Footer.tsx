@@ -6,7 +6,7 @@ import styles from "../../styles/footer.module.scss"
 export const Footer = () => {
     const navdata = useNav({ hidden: false })
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} onMouseOver={() => console.log('nnnn')}>
             <ContentContainer>
                 <div className={styles.address}>
                     <svg width="340" height="31" viewBox="0 0 340 31" fill="none" xmlns="http://www.w3.org/2000/svg">

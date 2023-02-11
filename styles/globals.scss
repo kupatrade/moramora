@@ -17,6 +17,7 @@ html {
   width: 100%;
   background: $html-background;
   height: 100%;
+  font-family: $default-font;
 }
 
 body {
@@ -38,7 +39,6 @@ main {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto 1fr auto;
-
 }
 
 section {
