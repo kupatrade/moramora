@@ -19,5 +19,23 @@
                 "city": "Minsk, 220029"
             }
         }
+    },
+    "form": {
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "message": "Message",
+        "clear": "Crear Form",
+        "send": "Send Request",
+        "sent": "Submitted",
+        "error": "Oops...Try again",
+        "valid": "Please, enter your phone or email"
+    },
+    "contact": {
+        "pre1": "We work around the world find us here",
+        "pre2": "find us here",
+        "officess": "Officess",
+        "getintouch": "Get in touch",
+        "tellUs": "Tell us about your project"
     }
 }

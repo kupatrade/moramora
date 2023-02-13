@@ -7,12 +7,16 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
 
         .input_container {
             height: 50px;
             position: relative;
             width: 100%;
+
+            [data-in="true"] & {
+                opacity: .6;
+            }
 
             .input {
                 background: transparent;
@@ -23,8 +27,12 @@
                 font-size: 18px;
                 height: 100%;
                 outline: 0;
-                padding: 4px 0 0;
+                padding: 4px 0 0 5px;
                 width: 100%;
+
+                @media(max-width: $pad) {
+                    font-size: 16px;
+                }
 
                 &:active,
                 :hover,
@@ -36,13 +44,18 @@
             .placeholder {
                 color: $header-menu-color;
                 font-family: sans-serif;
-                left: 0;
+                left: 5px;
                 line-height: 14px;
                 pointer-events: none;
                 position: absolute;
+                font-size: 16px;
                 transform-origin: 0 50%;
                 transition: transform 200ms, color 200ms;
                 top: 20px;
+
+                @media(max-width: $pad) {
+                    font-size: 14px;
+                }
             }
 
             .input:focus~.placeholder,
@@ -56,34 +69,170 @@
         }
     }
 
+    .warn {
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: right;
+        transition: opacity .3s ease;
+
+        @media(max-width: $pad) {
+            font-size: 12px;
+        }
+    }
+
     .btn_box {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 100%;
         gap: 24px;
-        margin-top: 48px;
+        margin-top: 38px;
+
+        @media(max-width: $phone) {
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr;
+
+            .send_btn_container {
+                grid-row: 1;
+            }
+        }
+
 
         .clear_btn,
-        .send_btn {
+        .send_btn,
+        .succsess_btn,
+        .error_btn {
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 16px;
             padding: 15px 0;
             cursor: pointer;
+
+            @media(max-width: $pad) {
+                font-size: 14px;
+            }
         }
 
         .clear_btn {
             background: transparent;
             border: 1px solid $grey;
             color: $grey;
+            transition: color .3s ease;
+
+            @media(hover: hover) {
+                &:hover {
+                    color: $footer-background;
+                }
+            }
         }
 
-        .send_btn {
-            background-color: $footer-background;
-            color: $footer-text-color;
-            gap: 8px;
+        .send_btn_container {
+            width: 100%;
+            position: relative;
+            transition: all .3s ease-out;
+
+            [data-in="true"] & {
+                opacity: .8;
+            }
+
+            [data-type-btn="succsess"] & {
+                .send_btn {
+                    transform: rotateX(-90deg) translateZ(25px);
+                }
+
+                .succsess_btn {
+                    transform: rotateX(0deg) translateZ(25px);
+                }
+            }
+
+            [data-type-btn="error"] & {
+                .send_btn {
+                    transform: rotateX(90deg) translateZ(25px);
+                }
+
+                .error_btn {
+                    transform: rotateX(0) translateZ(25px);
+                }
+            }
+
+
+            .send_btn {
+                width: 100%;
+                background-color: $footer-background;
+                color: $footer-text-color;
+                gap: 8px;
+                transition: all .3s ease-in;
+                border: 1px solid transparent;
+                transform: rotateX(0deg) translateZ(25px);
+
+                p,
+                svg {
+                    transition: all .3s ease-in;
+                }
+
+                svg {
+                    transition: all .3s ease-in;
+                    transform: translateX(-20px);
+                    opacity: 0;
+
+                    @media (max-width: $phone) {
+                        display: none;
+                    }
+                }
+
+                @media(hover: hover) {
+                    &:hover {
+
+                        p {
+                            transform: translateX(-5px);
+                        }
+
+                        svg {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .succsess_btn {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: all .3s ease-in;
+                transform: rotateX(90deg) translateZ(25px);
+                background-color: transparent;
+                color: $footer-background;
+                border: 1px solid $footer-background;
+                gap: 8px;
+            }
+
+            .error_btn {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: all .3s ease-in;
+                transform: rotateX(-90deg) translateZ(25px);
+                background-color: $main-color;
+                color: $html-background;
+                border: 1px solid $main-color;
+                gap: 8px;
+            }
         }
+
+    }
+}
+
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: rgba(18, 18, 18, 0.2);
+    }
+
+    100% {
+        background-color: rgba(18, 18, 18, 0.5);
     }
 }
