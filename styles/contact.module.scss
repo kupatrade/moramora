@@ -1,10 +1,31 @@
-.container {
+@import "./styles";
 
-    // .one {
-    //     font-size: 25px;
-    // }
+.pre_contact_block {
+    width: 100%;
+    padding: 200px 0 120px 0;
 
-    // [class*="contact_one"] {
-    //     color: aqua;
-    // }
+    h1 {
+        font-size: 72px;
+    }
+}
+
+.map_container {
+    width: 100%;
+    padding: 40px 0 160px 0;
+}
+
+.form_container {
+    width: 100%;
+    padding: 74px 0 200px 0;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h2,
+    .form_wrap {
+        width: 48%;
+    }
 }

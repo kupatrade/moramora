@@ -38,9 +38,8 @@ export const Menu = () => {
             <div ref={containerRef} tabIndex={0} onKeyDown={keyHandler} id={"menu"} className={styles.menu_container}>
                 <ContentContainer>
                     <div className={styles.close_box}>
-                        <svg onClick={() => close(undefined)} width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 1L1 17" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M1 1L17 17" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <svg onClick={() => close(undefined)} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 1L1 19M1 1L19 19" stroke="#FAFAFA" />
                         </svg>
                     </div>
                     <div className={styles.nav_menu}>

@@ -1,0 +1,89 @@
+@import "./styles";
+
+.form_box {
+    width: 100%;
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .input_container {
+            height: 50px;
+            position: relative;
+            width: 100%;
+
+            .input {
+                background: transparent;
+                border: 1px solid transparent;
+                border-bottom: 1px solid $footer-background;
+                box-sizing: border-box;
+                color: $footer-background;
+                font-size: 18px;
+                height: 100%;
+                outline: 0;
+                padding: 4px 0 0;
+                width: 100%;
+
+                &:active,
+                :hover,
+                :focus {
+                    outline: 0;
+                }
+            }
+
+            .placeholder {
+                color: $header-menu-color;
+                font-family: sans-serif;
+                left: 0;
+                line-height: 14px;
+                pointer-events: none;
+                position: absolute;
+                transform-origin: 0 50%;
+                transition: transform 200ms, color 200ms;
+                top: 20px;
+            }
+
+            .input:focus~.placeholder,
+            .input:not(:placeholder-shown)~.placeholder {
+                transform: translateY(-30px) translateX(0px) scale(0.75);
+            }
+
+            .input:focus~.placeholder {
+                color: $footer-background;
+            }
+        }
+    }
+
+    .btn_box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100%;
+        gap: 24px;
+        margin-top: 48px;
+
+        .clear_btn,
+        .send_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            padding: 15px 0;
+            cursor: pointer;
+        }
+
+        .clear_btn {
+            background: transparent;
+            border: 1px solid $grey;
+            color: $grey;
+        }
+
+        .send_btn {
+            background-color: $footer-background;
+            color: $footer-text-color;
+            gap: 8px;
+        }
+    }
+}

@@ -5,5 +5,19 @@
         "whatWeDo": "What we do",
         "about": "About",
         "contacts": "Contacts"
+    },
+    "footer": {
+        "adress": {
+            "pl": {
+                "country": "Poland",
+                "street": "ul. Krucza 51",
+                "city": "Warszawa, 00-022"
+            },
+            "bel": {
+                "country": "Belarus",
+                "street": "ul. Chycheryna 21",
+                "city": "Minsk, 220029"
+            }
+        }
     }
 }

@@ -32,12 +32,10 @@ export const Header = () => {
                     <Nav header={true} preKey="header" data={navdata} />
                 </div>
                 <div className={styles.menu_btn_box}>
-                    <svg onClick={() => setNavbar(true)} className={styles.menu_btn} width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 10H7" stroke="#25282B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M21 6H3" stroke="#25282B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M21 14H3" stroke="#25282B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M21 18H7" stroke="#25282B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    <div onClick={() => setNavbar(true)} className={styles.menu_btn}>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </ContentContainer>
         </header>

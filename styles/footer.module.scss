@@ -3,7 +3,6 @@
 .footer {
     padding: 32px 0 45px 0;
     width: 100%;
-    font-family: $poppis-light;
 
     [class*="container_content_container"] {
         display: flex;
@@ -20,7 +19,7 @@
         gap: 100px;
 
         @media (max-width: $phone) {
-            gap: 50px;
+            gap: 40px;
             // flex-direction: column;
         }
 
@@ -33,14 +32,14 @@
             height: 16px;
 
             @media (max-width: $extra-large) {
-                width: 112px;
-                height: 11px;
-            }
-
-            @media (max-width: $phone) {
                 width: 166px;
                 height: 15px;
             }
+
+            // @media (max-width: $phone) {
+            //     width: 112px;
+            //     height: 11px;
+            // }
         }
 
         .adress_box {
@@ -69,8 +68,7 @@
 
                 p:first-child {
                     font-size: 16px;
-                    font-weight: 600;
-                    font-size: $poppis-medium;
+                    font-family: $poppis-medium;
 
                     @media (max-width: $phone) {
                         font-size: 12px;
