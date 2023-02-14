@@ -92,3 +92,35 @@ $default-font: "Montserrat-Regular";
         }
     }
 }
+
+%left-text {
+    animation: lefttext .7s linear 1;
+
+    @keyframes lefttext {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+%right-text {
+    animation: righttext 1s linear 1;
+
+    @keyframes righttext {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@import "./styles";
+
+.pre_contact_block {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 200px 0 120px 0;
+
+    h1 {
+        @extend %left-text;
+        font-size: 72px;
+        max-width: 70%;
+    }
+
+    @media(max-width: $extra-large) {
+        padding: 160px 0 100px 0;
+
+        h1 {
+            font-size: 52px;
+        }
+    }
+
+    @media(max-width: $pad) {
+        padding: 106px 0 80px 0;
+        max-width: 80%;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    @media(max-width: $phone) {
+        padding: 76px 0 50px 0;
+
+        h1 {
+            font-size: 32px;
+            max-width: 100%;
+        }
+    }
+
+    @media(max-width: $small-phone) {
+        padding: 66px 0 30px 0;
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+}
+
+.preview {
+
+    h1 {
+        max-width: 80% !important;
+
+        @media(max-width: $large) {
+            max-width: 90% !important;
+        }
+
+        @media(max-width: $phone) {
+            max-width: 100% !important;
+        }
+    }
+
+    .mini_text {
+        @extend %right-text;
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 60px;
+        font-size: 16px;
+        transform: translateX(46%);
+
+        @media(max-width: $extra-large) {
+            margin-top: 40px;
+        }
+
+        @media(max-width: $pad) {
+            font-size: 14px;
+            margin-top: 33px;
+        }
+
+        @media(max-width: $pad) {
+            width: 237px;
+        }
+
+        @media(max-width: $phone) {
+            width: 188px;
+            transform: translateX(28%);
+            margin-top: 24px;
+        }
+
+        @media(max-width: $small-phone) {
+            width: 100%;
+            transform: translateX(0);
+            font-size: 12px;
+        }
+    }
+}

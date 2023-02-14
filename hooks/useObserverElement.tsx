@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react"
 
-export const useObserverElement = <T extends HTMLElement>() => {
+
+export const useObserverElement = <T extends HTMLElement>(desabledRevers = false) => {
     const ref = useRef<T>(null)
     const [isInView, setIsInView] = useState<boolean>(false);
     useEffect(() => {
@@ -8,7 +9,9 @@ export const useObserverElement = <T extends HTMLElement>() => {
             if (entries[0].isIntersecting) {
                 setIsInView(true)
             } else {
-                setIsInView(false)
+                if (!desabledRevers) {
+                    setIsInView(false)
+                }
             }
         }, {});
 

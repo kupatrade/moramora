@@ -3,10 +3,11 @@ import { MainLayout } from "../../layouts/MainLayout"
 import { ContentContainer } from "@/components/Container/ContentContaeiner"
 import { PaddingContainer } from "@/components/PaddingContainer/PaddingContainer"
 import { GenInTouch } from "@/components/GetInTouch/GetInTouch"
+import { Preview } from "@/components/Preview/Preview"
+import { DarkContainer } from "@/components/DarkContainer/DarkContaine"
 import { Line } from "@/components/Line/Line"
 import { useTranslation } from "react-i18next"
 import styles from "../../styles/team.module.scss"
-import stylesContact from "../../styles/contact.module.scss"
 
 import photo1 from "../../public/photo/photo1.png"
 import photo2 from "../../public/photo/photo2.png"
@@ -18,14 +19,9 @@ export default function Team() {
         <MainLayout>
             <PaddingContainer>
                 <ContentContainer>
-                    <div className={`${styles.preview} ${stylesContact.pre_contact_block}`}>
-                        <h1>{t("team.previewSlogan")}</h1>
-                        <div className={styles.mini_text}>
-                            <p>{t("team.previewText")}</p>
-                        </div>
-                    </div>
+                    <Preview title={t("team.previewSlogan")} description={t("team.previewText") as string} />
                 </ContentContainer>
-                <div className={styles.pictures_container}>
+                <DarkContainer>
                     <ContentContainer>
                         <Line dark={true} title={t("team.ourTeam")} />
                         <div className={styles.pictures_box}>
@@ -46,7 +42,7 @@ export default function Team() {
                             </div>
                         </div>
                     </ContentContainer>
-                </div>
+                </DarkContainer>
                 <ContentContainer>
                     <GenInTouch />
                 </ContentContainer>

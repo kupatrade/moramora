@@ -45,5 +45,12 @@
     "getInTouchBlock": {
         "getInTouch": "Get in touch",
         "pre": "Interested working with us?"
+    },
+    "about": {
+        "previewSlogan": "We create custom digital product for each company",
+        "previewText": "Clients come to us when they have a great idea, but need a team of experts to help them bring it to life",
+        "aboutUsLabel": "About us",
+        "leftText": "The best talent, no matter where you are",
+        "rightText": "MoraMora company was founded not so long ago. The actual idea came suddenly as one of the respectable wholesale trading companies was looking for a contractor to implement a quite large and ambitious project - to develop their own custom sales managing system from zero level. From the first days we successfully managed to gather together the team of enthusiastic professionals who a contractor to implement a quite large and ambitious project - to develop their own custom sales managing system from zero level. From the first days we successfully managed to gather together the team of enthusiastic professionals"
     }
 }

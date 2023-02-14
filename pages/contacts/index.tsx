@@ -2,6 +2,7 @@ import dynamic from "next/dynamic"
 import { MainLayout } from "../../layouts/MainLayout"
 import { ContentContainer } from "@/components/Container/ContentContaeiner"
 import { PaddingContainer } from "@/components/PaddingContainer/PaddingContainer"
+import { Preview } from "@/components/Preview/Preview"
 import { Line } from "@/components/Line/Line"
 import { Form } from "@/components/Form/Form"
 import styles from "../../styles/contact.module.scss"
@@ -15,9 +16,7 @@ export default function Contacts() {
         <MainLayout>
             <PaddingContainer>
                 <ContentContainer>
-                    <div className={styles.pre_contact_block}>
-                        <h1>{t("contact.pre1")}</h1>
-                    </div>
+                    <Preview title={t("contact.pre1")} />
                     <Line title={t("contact.officess")} />
                 </ContentContainer>
                 <ContentContainer>
