@@ -71,7 +71,7 @@ export const Form = () => {
 
     return (
         <div style={{ width: "100%" }} data-type-btn={sendBtn} data-in={isLoading}>
-            <div id="contact-form" className={styles.form_box}>
+            <div className={styles.form_box}>
                 <div className={styles.form}>
                     <div className={`${styles.input_container}`}>
                         <input

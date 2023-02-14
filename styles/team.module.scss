@@ -1,0 +1,147 @@
+@import "./styles";
+
+.preview {
+
+    h1 {
+        max-width: 80% !important;
+
+        @media(max-width: $large) {
+            max-width: 90% !important;
+        }
+
+        @media(max-width: $phone) {
+            max-width: 100% !important;
+        }
+    }
+
+    .mini_text {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 60px;
+        font-size: 16px;
+        transform: translateX(46%);
+
+        @media(max-width: $extra-large) {
+            margin-top: 40px;
+        }
+
+        @media(max-width: $pad) {
+            font-size: 14px;
+            margin-top: 33px;
+        }
+
+        @media(max-width: $pad) {
+            width: 237px;
+        }
+
+        @media(max-width: $phone) {
+            width: 188px;
+            transform: translateX(28%);
+            margin-top: 24px;
+        }
+
+        @media(max-width: $small-phone) {
+            width: 100%;
+            transform: translateX(0);
+            font-size: 12px;
+        }
+    }
+}
+
+.pictures_container {
+    width: 100%;
+    background: $footer-background;
+    padding: 100px 0 120px 0;
+
+    @media(max-width: $large) {
+        padding: 80px 0 100px 0;
+    }
+
+    @media(max-width: $pad) {
+        padding: 50px 0 80px 0;
+    }
+
+    @media(max-width: $phone) {
+        padding: 40px 0 70px 0;
+    }
+
+    @media(max-width: $small-phone) {
+        padding: 32px 0 50px 0;
+    }
+
+    .pictures_box {
+        margin-top: 87px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100%;
+        gap: 10%;
+
+        @media(max-width: $large) {
+            gap: 8%;
+            margin-top: 67px;
+        }
+
+        @media(max-width: $pad) {
+            margin-top: 56px;
+            gap: 4%;
+        }
+
+        @media(max-width: $phone) {
+            margin-top: 24px;
+            gap: 2%;
+        }
+
+        @media(max-width: 586px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .pictures_card {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                color: $html-background;
+            }
+
+            .name {
+                font-size: 26px;
+                font-family: $poppis-medium;
+                margin-top: 16px;
+
+                @media(max-width: $large) {
+                    font-size: 24px;
+                }
+
+                @media(max-width: $pad) {
+                    font-size: 18px;
+                }
+
+                @media(max-width: $phone) {
+                    font-size: 16px;
+                }
+            }
+
+            .pro {
+                font-size: 18px;
+                margin-top: 8px;
+
+                @media(max-width: $large) {
+                    font-size: 16px;
+                }
+
+                @media(max-width: $pad) {
+                    font-size: 14px;
+                    margin-top: 4px;
+                }
+
+                @media(max-width: $phone) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

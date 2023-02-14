@@ -8,6 +8,11 @@
     src: url("../public/font/Montserrat/static/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../public/font/Montserrat/static/Montserrat-Bold.ttf");
+}
+
 
 $extra-large: 1440px;
 $large: 1000px;
@@ -25,6 +30,7 @@ $dark-grey: #505050;
 $menu-btn-color: #25282B;
 $poppis-medium: "Montserrat-SemiBold";
 $poppis-light: "Montserrat-Regular";
+$font-bold: "Montserrat-Bold";
 $default-font: "Montserrat-Regular";
 
 %show-menu {

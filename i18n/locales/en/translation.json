@@ -33,9 +33,17 @@
     },
     "contact": {
         "pre1": "We work around the world find us here",
-        "pre2": "find us here",
         "officess": "Officess",
         "getintouch": "Get in touch",
         "tellUs": "Tell us about your project"
+    },
+    "team": {
+        "previewSlogan": "We are a  team of specialists around the world",
+        "previewText": "Our employees work best because they can create where they feel most comfortable",
+        "ourTeam": "Our team"
+    },
+    "getInTouchBlock": {
+        "getInTouch": "Get in touch",
+        "pre": "Interested working with us?"
     }
 }

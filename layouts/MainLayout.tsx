@@ -8,12 +8,14 @@ interface MainLayoutProps {
     title?: string,
     description?: string
     children: React.ReactNode;
+    errorPage?: boolean
 }
 
 export const MainLayout = ({
     children,
     title = metadata.main.title,
-    description = metadata.main.description
+    description = metadata.main.description,
+    errorPage = false
 }: MainLayoutProps) => {
     const { theme } = useAppSelector(state => state.global)
     return (
@@ -47,11 +49,11 @@ export const MainLayout = ({
                 <meta name="theme-color" content="#ffffff"></meta>
             </Head>
             <main data-theme={theme}>
-                <Header />
+                {errorPage ? false : <Header />}
                 <section>
                     {children}
                 </section>
-                <Footer />
+                {errorPage ? false : <Footer />}
             </main>
         </>
     )

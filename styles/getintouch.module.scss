@@ -1,0 +1,93 @@
+@import "./styles";
+
+.get_in_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .get_in_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 200px 0;
+
+        @media(max-width: $extra-large) {
+            padding: 160px 0;
+        }
+
+        @media(max-width: $large) {
+            padding: 120px 0;
+        }
+
+        @media(max-width: $pad) {
+            padding: 80px 0;
+        }
+
+        @media(max-width: $phone) {
+            padding: 70px 0;
+        }
+
+        a {
+            color: $footer-background;
+        }
+
+        .pre {
+            font-size: 16px;
+            animation: getAnimePre 8s linear infinite;
+            color: $footer-background;
+
+            @media(max-width: $pad) {
+                font-size: 14px;
+            }
+
+            @media(max-width: $phone) {
+                font-size: 12px;
+            }
+
+            @media(max-width: $small-phone) {
+                font-size: 10px;
+            }
+        }
+
+        .link {
+            transition: all .4s cubic-bezier(0.23, 1, 0.320, 1);
+            font-size: 91px;
+            font-size: $poppis-medium;
+            cursor: pointer;
+
+            @media (hover: hover) {
+                &:hover {
+                    transform: rotateY(-20deg)
+                }
+            }
+
+            @media(max-width: $pad) {
+                font-size: 72px;
+            }
+
+            @media(max-width: $phone) {
+                font-size: 50px;
+            }
+
+            @media(max-width: 420px) {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@keyframes getAnimePre {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(80px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -32,7 +32,7 @@ export default function Contacts() {
                     <Line title={t("contact.getintouch")} />
                 </ContentContainer>
                 <ContentContainer>
-                    <div className={styles.form_container}>
+                    <div id="contact-form" className={styles.form_container}>
                         <h2>{t("contact.tellUs")}</h2>
                         <div className={styles.form_wrap}>
                             <Form />

@@ -1,0 +1,90 @@
+@import "./styles";
+
+.error_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    @media(max-width: $pad) {
+        gap: 20px;
+    }
+
+    @media(max-width: $small-phone) {
+        gap: 10px;
+    }
+
+    .number_box {
+        display: flex;
+
+        p {
+            font-size: 500px;
+            font-family: $font-bold;
+
+            @media(max-width: $extra-large) {
+                font-size: 400px;
+            }
+
+            @media(max-width: $large) {
+                font-size: 350px;
+            }
+
+            @media(max-width: $pad) {
+                font-size: 250px;
+            }
+
+            @media(max-width: $phone) {
+                font-size: 150px;
+            }
+
+            @media(max-width: $small-phone) {
+                font-size: 100px;
+            }
+        }
+
+        p:last-child {
+            transform: rotateY(180deg);
+        }
+    }
+
+    .not_found {
+        font-size: 40px;
+        font-family: $font-bold;
+
+        @media(max-width: $extra-large) {
+            font-size: 32px;
+        }
+
+        @media(max-width: $large) {
+            font-size: 24px;
+        }
+
+        @media(max-width: $pad) {
+            font-size: 18px;
+        }
+
+    }
+
+    button {
+        background: transparent;
+        border: 1px solid black;
+        padding: 15px 62px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all .2s ease;
+
+        @media(max-width: $small-phone) {
+            font-size: 14px;
+        }
+
+        @media(hover: hover) {
+            &:hover {
+                background: $footer-background;
+                color: $html-background;
+            }
+        }
+    }
+}
