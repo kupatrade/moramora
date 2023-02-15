@@ -26,17 +26,23 @@ export default function Team() {
                         <Line dark={true} title={t("team.ourTeam")} />
                         <div className={styles.pictures_box}>
                             <div className={styles.pictures_card}>
-                                <Image src={photo1} alt="photo1" />
+                                <div className={styles.box_image}>
+                                    <Image src={photo1} alt="photo1" />
+                                </div>
                                 <p className={styles.name}>Alex Vork</p>
                                 <p className={styles.pro}>Founder</p>
                             </div>
                             <div className={styles.pictures_card}>
-                                <Image src={photo2} alt="photo2" />
+                                <div className={styles.box_image}>
+                                    <Image src={photo2} alt="photo2" />
+                                </div>
                                 <p className={styles.name}>David Nobble</p>
                                 <p className={styles.pro}>Full-Stack developer</p>
                             </div>
                             <div className={styles.pictures_card}>
-                                <Image src={photo3} alt="photo3" />
+                                <div className={styles.box_image}>
+                                    <Image src={photo3} alt="photo3" />
+                                </div>
                                 <p className={styles.name}>Maria Sole</p>
                                 <p className={styles.pro}>Art director</p>
                             </div>

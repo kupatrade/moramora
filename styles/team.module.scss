@@ -29,9 +29,25 @@
     }
 
     .pictures_card {
-        img {
+        cursor: pointer;
+
+        @media(hover: hover) {
+            &:hover {
+                img {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        .box_image {
+            overflow: hidden;
             width: 100%;
-            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                transition: all .4s ease;
+            }
         }
 
         p {
