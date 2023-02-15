@@ -3,6 +3,8 @@ import { metadata } from "../data/meta"
 import { useAppSelector } from '@/hooks/useRedux'
 import { Header } from '@/components/Header/Header'
 import { Footer } from '@/components/Footer/Footer'
+import { Cursor } from '@/components/Cursor/Cursor'
+import { useDeviceDetect } from '@/hooks/useDeviceDetect'
 
 interface MainLayoutProps {
     title?: string,
@@ -18,6 +20,7 @@ export const MainLayout = ({
     errorPage = false
 }: MainLayoutProps) => {
     const { theme } = useAppSelector(state => state.global)
+    const { isMobile } = useDeviceDetect()
     return (
         <>
             <Head>
@@ -54,6 +57,7 @@ export const MainLayout = ({
                     {children}
                 </section>
                 {errorPage ? false : <Footer />}
+                {!isMobile ? <Cursor /> : false}
             </main>
         </>
     )

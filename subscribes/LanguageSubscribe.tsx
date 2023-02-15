@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useAppSelector } from '../hooks/useRedux';
 import i18n from '../i18n/i18n';
 
