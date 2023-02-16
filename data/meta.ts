@@ -1,6 +1,6 @@
 export const metadata = {
     main: {
-        title: "Main | MoraMora",
-        description: "kdckdkdc"
+        title: "MoraMora | Software Development Company",
+        description: "MoraMora is very ambitious full cycle software development company"
     }
 }

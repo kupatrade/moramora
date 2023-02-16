@@ -47,10 +47,38 @@
         "pre": "Interested working with us?"
     },
     "about": {
-        "previewSlogan": "We create custom digital product for each company",
+        "previewSlogan": "We help your business achieve new goals",
         "previewText": "Clients come to us when they have a great idea, but need a team of experts to help them bring it to life",
         "aboutUsLabel": "About us",
         "leftText": "The best talent, no matter where you are",
         "rightText": "MoraMora company was founded not so long ago. The actual idea came suddenly as one of the respectable wholesale trading companies was looking for a contractor to implement a quite large and ambitious project - to develop their own custom sales managing system from zero level. From the first days we successfully managed to gather together the team of enthusiastic professionals who a contractor to implement a quite large and ambitious project - to develop their own custom sales managing system from zero level. From the first days we successfully managed to gather together the team of enthusiastic professionals"
+    },
+    "whatwedo": {
+        "previewSlogan": "We create custom digital product for each company",
+        "previewText": "Using contemporary development technologies we transform your ideas into real business value",
+        "commonText": "“Each new day is a new opportunity to create digital products. And that's exactly what we like”",
+        "servicesLabel": "Services",
+        "workLabel": "Work process",
+        "firstServiceBlock": {
+            "title": "Web & Mobile apps",
+            "text1": "Services",
+            "text2": "Payments",
+            "text3": "eCommerce",
+            "text4": "Custom apps"
+        },
+        "secondServiceBlock": {
+            "title": "UX & Product design",
+            "text1": "Services",
+            "text2": "Payments",
+            "text3": "eCommerce",
+            "text4": "Custom apps"
+        },
+        "thirdServiceBlock": {
+            "title": "Product development",
+            "text1": "Services",
+            "text2": "Payments",
+            "text3": "eCommerce",
+            "text4": "Custom apps"
+        }
     }
 }

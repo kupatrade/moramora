@@ -6,9 +6,6 @@
     justify-content: center;
     align-items: center;
 
-
-
-
     .get_in_box {
         display: flex;
         flex-direction: column;
@@ -67,14 +64,6 @@
             -webkit-background-clip: text;
             color: transparent;
             -webkit-text-fill-color: transparent;
-
-
-
-            // @media (hover: hover) {
-            //     &:hover {
-            //         transform: rotateY(-20deg)
-            //     }
-            // }
 
             @media(max-width: $pad) {
                 font-size: 72px;

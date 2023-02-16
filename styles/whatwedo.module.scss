@@ -1,0 +1,225 @@
+@import "./styles";
+
+
+
+.common_container {
+    width: 100%;
+    background: $footer-background;
+    padding: 177px 0;
+
+    @media(max-width: $large) {
+        padding: 137px 0;
+    }
+
+    @media(max-width: $pad) {
+        padding: 103px 0;
+    }
+
+    @media(max-width: $phone) {
+        padding: 80px 0;
+    }
+
+    @media(max-width: $small-phone) {
+        padding: 50px 0;
+    }
+
+    .common_text {
+        color: $html-background;
+        text-align: center;
+        font-size: 50px;
+        line-height: 61px;
+        width: 75%;
+        margin: 0 auto;
+
+        @media(max-width: $large) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        @media(max-width: $pad) {
+            font-size: 26px;
+            line-height: 32px;
+            width: 90%;
+        }
+
+        @media(max-width: $phone) {
+            font-size: 18px;
+            line-height: 24px;
+            width: 100%;
+        }
+
+        @media(max-width: $small-phone) {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+
+}
+
+.services_container {
+    width: 100%;
+    color: $html-background;
+    display: flex;
+    padding-top: 50px;
+
+    @media(max-width: $phone) {
+        padding-top: 35px;
+    }
+
+    @media(max-width: 570px) {
+        flex-direction: column;
+    }
+
+    @media(max-width: $small-phone) {
+        padding-top: 24px;
+    }
+
+    .square {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .squere_box {
+            width: 60%;
+            position: relative;
+
+            .first_square {
+                width: 100%;
+                animation: squareBalans 5s linear infinite;
+            }
+
+            .second_squere {
+                width: 100%;
+                position: absolute;
+                transform: rotateZ(20deg);
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @media(max-width: 570px) {
+            display: none;
+        }
+    }
+
+    .text_container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media(max-width: $large) {
+            gap: 32px;
+        }
+
+        @media(max-width: $phone) {
+            gap: 29px;
+        }
+
+        @media(max-width: 570px) {
+            width: 100%;
+        }
+
+        @media(max-width: $small-phone) {
+            gap: 16px;
+        }
+
+
+        .text_box {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            @media(max-width: $pad) {
+                gap: 24px;
+            }
+
+            @media(max-width: $phone) {
+                gap: 18px;
+            }
+
+            @media(max-width: $small-phone) {
+                gap: 16px;
+            }
+
+            .text_main {
+                font-size: 40px;
+                line-height: 49px;
+                font-family: $poppis-medium;
+
+                @media(max-width: $large) {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                @media(max-width: $pad) {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+                @media(max-width: $phone) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            .text_main_deteils_block {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 17px;
+                column-gap: 17px;
+
+                @media(max-width: $large) {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media(max-width: $pad) {
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 12px;
+                }
+
+                @media(max-width: $phone) {
+                    row-gap: 8px;
+                }
+
+                .text_main_deteils_text {
+                    font-size: 18px;
+                    line-height: 22px;
+
+                    @media(max-width: $pad) {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    @media(max-width: $phone) {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+
+            .line {
+                padding: 1px;
+                background-color: $grey;
+            }
+        }
+    }
+}
+
+@keyframes squareBalans {
+    0% {
+        opacity: .4;
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .4;
+        transform: rotateZ(360deg);
+    }
+}
