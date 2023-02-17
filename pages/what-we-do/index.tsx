@@ -69,7 +69,36 @@ export default function WhatWeDo() {
                 <DarkContainer light={true}>
                     <ContentContainer>
                         <Line title={t("whatwedo.workLabel")} />
-
+                        <div className={styles.process_container}>
+                            <div className={styles.left}>
+                                <p className={styles.number}>{t("whatwedo.firstProcessBlock.number")}</p>
+                                <p className={styles.text}>{t("whatwedo.firstProcessBlock.title")}</p>
+                            </div>
+                            <div className={styles.right}>
+                                {t("whatwedo.firstProcessBlock.description")}
+                            </div>
+                            <div className={styles.left}>
+                                <p className={styles.number}>{t("whatwedo.secondProcessBlock.number")}</p>
+                                <p className={styles.text}>{t("whatwedo.secondProcessBlock.title")}</p>
+                            </div>
+                            <div className={styles.right}>
+                                {t("whatwedo.secondProcessBlock.description")}
+                            </div>
+                            <div className={styles.left}>
+                                <p className={styles.number}>{t("whatwedo.thirdProcessBlock.number")}</p>
+                                <p className={styles.text}>{t("whatwedo.thirdProcessBlock.title")}</p>
+                            </div>
+                            <div className={styles.right}>
+                                {t("whatwedo.thirdProcessBlock.description")}
+                            </div>
+                            <div className={styles.left}>
+                                <p className={styles.number}>{t("whatwedo.fourthProcessBlock.number")}</p>
+                                <p className={styles.text}>{t("whatwedo.fourthProcessBlock.title")}</p>
+                            </div>
+                            <div className={styles.right}>
+                                {t("whatwedo.fourthProcessBlock.description")}
+                            </div>
+                        </div>
                     </ContentContainer>
                 </DarkContainer>
                 <div className={styles.common_container}>

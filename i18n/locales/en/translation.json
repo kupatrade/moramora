@@ -79,6 +79,26 @@
             "text2": "Payments",
             "text3": "eCommerce",
             "text4": "Custom apps"
+        },
+        "firstProcessBlock": {
+            "title": "Briefing",
+            "number": "01",
+            "description": "Send us a detailed briefing including the following information: who you are / core values / business goals / target group / what you are selling / required features / scope of the project or sitemap / timeframe and deadlines / examples of other sites you like."
+        },
+        "secondProcessBlock": {
+            "title": "Concept",
+            "number": "02",
+            "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
+        },
+        "thirdProcessBlock": {
+            "title": "Design",
+            "number": "03",
+            "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
+        },
+        "fourthProcessBlock": {
+            "title": "Development",
+            "number": "04",
+            "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
         }
     }
 }
