@@ -100,5 +100,23 @@
             "number": "04",
             "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
         }
+    },
+    "home": {
+        "label1": "Our mission",
+        "descriptionWhiteBlock": "Our goal is to assist businesses in achieving a leading position in their respective industries. We strive to make our clients stand out from their top competitors and ensure their satisfaction by leaving no stone unturned in the process. Our mission is fueled by a perfect combination of passion, dedication, and a generous amount of caffeine, which is crucial in aiding our efforts. Ultimately, we aim to bring a smile to our clients' faces as they see the positive results of our work.",
+        "label2": "What we do",
+        "btnNext": "Learn more ",
+        "whatBox1": {
+            "title": "Software & App Development",
+            "description": "Our software developers will take your ideas to the next innovation level, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services so you can reach your audience."
+        },
+        "whatBox2": {
+            "title": "Website Design & Development",
+            "description": "Our software developers will take your ideas to the next innovation level, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services so you can reach your audience."
+        },
+        "whatBox3": {
+            "title": "Branding",
+            "description": "Our software developers will take your ideas to the next innovation level, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services so you can reach your audience."
+        }
     }
 }

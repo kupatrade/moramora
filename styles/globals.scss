@@ -27,8 +27,8 @@ html::before {
   height: 60px;
   background: #000;
   border-radius: 50%;
-  top: var(--y, 0);
-  left: var(--x, 0);
+  top: var(--y, -40px);
+  left: var(--x, -40px);
   transform: translate(-50%, -50%);
   z-index: -2;
 }
@@ -63,6 +63,12 @@ header {
   top: 0;
   left: 0;
   z-index: 500;
+  transition: all .3s ease;
+}
+
+.header_main_active {
+  background: $html-background !important;
+
 }
 
 footer {
@@ -117,4 +123,15 @@ footer {
 
 .hide_menu {
   @extend %hide-menu;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }

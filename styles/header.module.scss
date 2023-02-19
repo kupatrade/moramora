@@ -27,13 +27,6 @@
         }
     }
 
-    .smal_logo {
-        display: none;
-        width: 40px;
-        height: 40px;
-    }
-
-
     nav {
         display: flex;
         align-items: center;
@@ -42,6 +35,7 @@
         a {
             font-family: $poppis-light;
             transition: all 1s ease;
+            color: $grey;
         }
 
         div {
@@ -143,5 +137,33 @@
         @media(max-width: $pad) {
             grid-template-columns: 1fr 1fr;
         }
+    }
+}
+
+.header_transparent {
+    background: transparent;
+
+    nav {
+        div {
+            @media(hover: hover) {
+                &:hover {
+                    a {
+                        color: $grey !important;
+                    }
+                }
+            }
+        }
+
+        div[data-active="active"] {
+            border-bottom: 2px solid $grey !important;
+
+            a {
+                color: $grey !important;
+            }
+        }
+    }
+
+    .menu_btn_box {
+        @extend %hover-menu-transparent;
     }
 }

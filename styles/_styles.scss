@@ -83,6 +83,28 @@ $default-font: "Montserrat-Regular";
     }
 }
 
+%hover-menu-transparent {
+    span {
+        transition: all .6s ease;
+    }
+
+    @media(hover: hover) {
+        span {
+            background: $grey !important;
+        }
+
+        &:hover {
+            span:first-child {
+                transform: rotate(180deg);
+            }
+
+            span:last-child {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+
 %hover-close-menu {
     transition: transform .6s ease;
 
@@ -122,5 +144,19 @@ $default-font: "Montserrat-Regular";
         100% {
             opacity: 1;
         }
+    }
+}
+
+@keyframes showHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

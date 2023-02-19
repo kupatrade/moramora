@@ -5,12 +5,16 @@ import { Nav } from "../Nav/Nav"
 import { useActions } from "@/hooks/useRedux"
 import styles from "../../styles/header.module.scss"
 
-export const Header = () => {
+interface HeaderProps {
+    transparent?: boolean
+}
+
+export const Header = ({ transparent = false }: HeaderProps) => {
     const { setNavbar } = useActions()
     const navdata = useNav({ hidden: false })
     const router = useRouter()
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${transparent ? styles.header_transparent : ""}`}>
             <ContentContainer>
                 <div >
                     <svg onClick={() => router.push("/")} className={styles.logo} width="340" height="31" viewBox="0 0 340 31" fill="none" xmlns="http://www.w3.org/2000/svg">
