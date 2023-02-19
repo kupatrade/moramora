@@ -52,7 +52,7 @@
         }
 
         .link {
-            transition: all .4s cubic-bezier(0.23, 1, 0.320, 1);
+            // transition: all .4s cubic-bezier(0.23, 1, 0.320, 1);
             font-size: 91px;
             font-size: $poppis-medium;
             cursor: pointer;
@@ -62,8 +62,8 @@
                     $html-background 99%, $footer-background 100%) fixed;
             background-clip: text;
             -webkit-background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
+            color: $footer-background;
+            // -webkit-text-fill-color: $footer-background;
 
             @media(max-width: $pad) {
                 font-size: 72px;

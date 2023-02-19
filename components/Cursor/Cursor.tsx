@@ -13,14 +13,25 @@ export const Cursor = ({ children }: CursorProps) => {
         }
         const target = e.target as HTMLElement
 
+
         if (target && target.closest("#get-in-touch")) {
             document.documentElement.style.setProperty('--x', (e.clientX) + 'px');
             document.documentElement.style.setProperty('--y', (e.clientY) + 'px');
             el.classList.add(styles.follow_cursor_active)
+            const text = document.getElementById("get-in-touch") as HTMLElement
+            if (text) {
+                text.style.color = "transparent"
+                text.style.background = ""
+            }
         } else {
             el.classList.remove(styles.follow_cursor_active)
             document.documentElement.style.setProperty('--x', (-100) + 'px');
             document.documentElement.style.setProperty('--y', (-100) + 'px');
+            const text = document.getElementById("get-in-touch") as HTMLElement
+            if (text) {
+                text.style.color = "#121212"
+                text.style.background = "none"
+            }
         }
 
         let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
