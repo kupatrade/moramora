@@ -1,5 +1,5 @@
 import { ContentContainer } from "../Container/ContentContaeiner"
-import { useNav } from "@/hooks/useNav"
+import { useNav } from "../../hooks/useNav"
 import { Nav } from "../Nav/Nav"
 import { useTranslation } from "react-i18next"
 import styles from "../../styles/footer.module.scss"
