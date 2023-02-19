@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { ContentContainer } from "../Container/ContentContaeiner"
 import { useNav } from "@/hooks/useNav"
 import { Nav } from "../Nav/Nav"
-import { useActions } from "@/hooks/useRedux"
+import { useActions } from "../../hooks/useRedux"
 import styles from "../../styles/header.module.scss"
 
 interface HeaderProps {

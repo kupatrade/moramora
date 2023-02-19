@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useAppSelector } from "@/hooks/useRedux"
+import { useAppSelector } from "../hooks/useRedux"
 interface ThemeSubscribeProps {
     children: React.ReactNode
 }
