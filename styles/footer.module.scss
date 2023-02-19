@@ -35,11 +35,15 @@
                 width: 166px;
                 height: 15px;
             }
+        }
 
-            // @media (max-width: $phone) {
-            //     width: 112px;
-            //     height: 11px;
-            // }
+        .herovo {
+            width: 177px;
+            height: 24px;
+
+            @media (max-width: $extra-large) {
+                height: 20px;
+            }
         }
 
         .adress_box {

@@ -10,6 +10,7 @@ import { Line } from "@/components/Line/Line"
 import { useTranslation } from "react-i18next"
 import { useObserverElement } from "@/hooks/useObserverElement"
 import { StartScreen } from "@/components/StartScreen/StartScreen"
+import { useDeviceDetect } from "@/hooks/useDeviceDetect"
 import styles from "../styles/home.module.scss"
 
 import img1 from "../public/photo/photo6.jpg"
@@ -19,15 +20,16 @@ import img3 from "../public/photo/photo4_600_300.jpg"
 
 export default function Main() {
   const { t } = useTranslation()
-  const { ref: videoRef, isInView: isVideoView } = useObserverElement<HTMLDivElement>(false, true)
+  const { ref: mainBlockRef, isInView: isVideoView } = useObserverElement<HTMLDivElement>(false, true)
   const { ref: changeBackgroundRef, isInView: isChangeBackgroundView } = useObserverElement<HTMLDivElement>(false)
   const [darkLight, setDarkLight] = useState<boolean>(false)
 
   useEffect(() => setDarkLight(isChangeBackgroundView), [isChangeBackgroundView])
   return (
     <MainLayout headerTransparent={isVideoView}>
-      <div style={{ width: "100%", height: "100vh", background: "black", position: "relative" }} ref={videoRef}>
+      <div className={styles.main_anime_container} ref={mainBlockRef}>
         <StartScreen />
+        <h1>{t("home.animeMainText")}</h1>
       </div>
       <PaddingContainer>
         <DarkContainer light>

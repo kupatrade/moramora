@@ -37,13 +37,17 @@ export const MainLayout = ({
                 <meta property="og:url" content={process.env.PUBLIC_META_URL} />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content={`${process.env.PUBLIC_META_URL}meta_media/media.jpg`} />
+                <meta property="og:image" content={`${process.env.PUBLIC_META_URL}meta_media/media.png`} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
 
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content={process.env.PUBLIC_META_URL} />
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
-                <meta property="twitter:image" content={`${process.env.PUBLIC_META_URL}meta_media/media.jpg`} />
+                <meta property="twitter:image" content={`${process.env.PUBLIC_META_URL}meta_media/media.png`} />
+                <meta property="twitter:image:width" content="1200" />
+                <meta property="twitter:image:height" content="630" />
 
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
