@@ -27,21 +27,30 @@ export default function Team() {
                         <div className={styles.pictures_box}>
                             <div className={styles.pictures_card}>
                                 <div className={styles.box_image}>
-                                    <Image src={photo1} alt="photo1" />
+                                    <Image
+                                        placeholder="blur"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        src={photo1} alt="photo1" />
                                 </div>
                                 <p className={styles.name}>Alex Vork</p>
                                 <p className={styles.pro}>Founder</p>
                             </div>
                             <div className={styles.pictures_card}>
                                 <div className={styles.box_image}>
-                                    <Image src={photo2} alt="photo2" />
+                                    <Image
+                                        placeholder="blur"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        src={photo2} alt="photo2" />
                                 </div>
                                 <p className={styles.name}>David Nobble</p>
                                 <p className={styles.pro}>Full-Stack developer</p>
                             </div>
                             <div className={styles.pictures_card}>
                                 <div className={styles.box_image}>
-                                    <Image src={photo3} alt="photo3" />
+                                    <Image
+                                        placeholder="blur"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        src={photo3} alt="photo3" />
                                 </div>
                                 <p className={styles.name}>Maria Sole</p>
                                 <p className={styles.pro}>Art director</p>

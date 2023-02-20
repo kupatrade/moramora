@@ -5,8 +5,8 @@ import { PaddingContainer } from "@/components/PaddingContainer/PaddingContainer
 import { Preview } from "@/components/Preview/Preview"
 import { Line } from "@/components/Line/Line"
 import { Form } from "@/components/Form/Form"
-import styles from "../../styles/contact.module.scss"
 import { useTranslation } from "react-i18next"
+import styles from "../../styles/contact.module.scss"
 
 const Map = dynamic(() => import("../../components/Map/Map"), { ssr: false })
 
@@ -31,7 +31,8 @@ export default function Contacts() {
                     <Line title={t("contact.getintouch")} />
                 </ContentContainer>
                 <ContentContainer>
-                    <div id="contact-form" className={styles.form_container}>
+                    <div className={styles.form_container}>
+                        <div id="contact-form" className={styles.scrollId} >0</div>
                         <h2>{t("contact.tellUs")}</h2>
                         <div className={styles.form_wrap}>
                             <Form />
