@@ -10,7 +10,6 @@ import { Line } from "@/components/Line/Line"
 import { useTranslation } from "react-i18next"
 import { useObserverElement } from "@/hooks/useObserverElement"
 import { StartScreen } from "@/components/StartScreen/StartScreen"
-import { useDeviceDetect } from "@/hooks/useDeviceDetect"
 import styles from "../styles/home.module.scss"
 
 import img1 from "../public/photo/photo6.jpg"

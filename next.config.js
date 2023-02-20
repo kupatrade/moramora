@@ -3,7 +3,7 @@ require('dotenv').config()
 const nextConfig = {
   reactStrictMode: false,
   env: {
-    PUBLIC_META_URL: process.env.PUBLIC_META_URL
+    PUBLIC_META_URL: "https://moramora-soft.com/"
   }
 }
 

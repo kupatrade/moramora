@@ -26,6 +26,13 @@ Docker save image to moramora.tar:
 ```bash
 docker save -o ./moramora.tar moramora-moramora
 ```
+
+Unpackege moramora.tar:
+
+```bash
+docker load --input moramora.tar
+```
+
 Copy archive and docker-compose file to server folder:
 Your folder can have another name
 
