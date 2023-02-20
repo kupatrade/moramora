@@ -25,8 +25,8 @@
         "phone": "Phone",
         "email": "Email",
         "message": "Message",
-        "clear": "Crear Form",
-        "send": "Send Request",
+        "clear": "Crear form",
+        "send": "Send request",
         "sent": "Submitted",
         "error": "Oops...Try again",
         "valid": "Please, enter your phone or email"

@@ -13,11 +13,11 @@ export const Nav = ({ data, preKey, header = false }: NavProps) => {
     return (
         <nav>
             {data.map(i => (
-                <div data-active={i.url === router.pathname ? "active" : ""} key={`${preKey}${i.url}`}>
+                <div onClick={() => router.push(i.url)} data-active={i.url === router.pathname ? "active" : ""} key={`${preKey}${i.url}`}>
                     <Link href={i.url}>{i.title}</Link>
                     {header ? (
-                        <span>
-                            <Link href={i.url}>{i.title}</Link>
+                        <span >
+                            <Link onClick={(e) => e.preventDefault()} href={i.url}>{i.title}</Link>
                         </span>
                     ) : false}
                 </div>
