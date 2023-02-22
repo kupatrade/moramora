@@ -16,14 +16,19 @@ import img1 from "../public/photo/photo6.jpg"
 import img2 from "../public/photo/photo5.jpg"
 import img3 from "../public/photo/photo4_600_300.jpg"
 
+let fadeEffect: boolean = true
 
 export default function Main() {
   const { t } = useTranslation()
   const { ref: mainBlockRef, isInView: isVideoView } = useObserverElement<HTMLDivElement>(false, true)
   const { ref: changeBackgroundRef, isInView: isChangeBackgroundView } = useObserverElement<HTMLDivElement>(false)
   const [darkLight, setDarkLight] = useState<boolean>(false)
-
   useEffect(() => setDarkLight(isChangeBackgroundView), [isChangeBackgroundView])
+  useEffect(() => {
+    return () => {
+      fadeEffect = false
+    }
+  }, [])
   return (
     <MainLayout headerTransparent={isVideoView}>
       <div className={styles.main_anime_container} ref={mainBlockRef}>
@@ -118,6 +123,7 @@ export default function Main() {
         {`
         header{
           position: fixed; 
+          animation: ${fadeEffect ? "fade 2s ease 1" : "none"};
         }
         `}
       </style>

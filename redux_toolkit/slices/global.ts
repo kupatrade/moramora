@@ -9,6 +9,7 @@ const initialState: GlobalInit = {
     navbar: false,
     language: check_language(),
     theme: "dark", //check_theme()
+    contentLoad: true
 };
 
 const globalSlice = createSlice({
@@ -33,6 +34,9 @@ const globalSlice = createSlice({
         },
         setNavbar: (state, action: PayloadAction<boolean>) => {
             state.navbar = action.payload
+        },
+        setContentLoaded: (state, action: PayloadAction<boolean>) => {
+            state.contentLoad = action.payload
         },
     },
 });

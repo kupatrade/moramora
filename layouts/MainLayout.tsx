@@ -11,7 +11,8 @@ interface MainLayoutProps {
     description?: string
     children: React.ReactNode;
     errorPage?: boolean,
-    headerTransparent?: boolean
+    headerTransparent?: boolean,
+    loading?: boolean
 }
 
 export const MainLayout = ({
@@ -19,7 +20,8 @@ export const MainLayout = ({
     title = metadata.main.title,
     description = metadata.main.description,
     errorPage = false,
-    headerTransparent = false
+    headerTransparent = false,
+    loading = false
 }: MainLayoutProps) => {
     const { theme } = useAppSelector(state => state.global)
     const { isMobile } = useDeviceDetect()
@@ -57,7 +59,7 @@ export const MainLayout = ({
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff"></meta>
             </Head>
-            <main data-theme={theme}>
+            <main data-theme={theme} className={loading ? "loading" : ""}>
                 {errorPage ? false : <Header transparent={headerTransparent} />}
                 <section>
                     {children}
