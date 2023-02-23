@@ -15,4 +15,4 @@ export interface Inav {
     url: string
 }
 
-export type AnswerCheckLanguage = "rus" | "en"
+export type AnswerCheckLanguage = "rus" | "en" | "bel"

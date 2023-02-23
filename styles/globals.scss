@@ -37,7 +37,7 @@ html::before {
   position: fixed;
   width: 60px;
   height: 60px;
-  background: #000;
+  background: $footer-background;
   border-radius: 50%;
   top: var(--y, -40px);
   left: var(--x, -40px);
