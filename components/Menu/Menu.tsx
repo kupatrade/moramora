@@ -51,12 +51,13 @@ export const Menu = () => {
                         <p
                             onClick={() => setLanguage("en")}
                             data-lang={language === "en" ? "active" : ""}>English</p>
-                        <p
-                            onClick={() => setLanguage("rus")}
-                            data-lang={language === "rus" ? "active" : ""} >Russian</p>
+
                         <p
                             onClick={() => setLanguage("bel")}
                             data-lang={language === "bel" ? "active" : ""} >Belarussian</p>
+                        <p
+                            onClick={() => setLanguage("rus")}
+                            data-lang={language === "rus" ? "active" : ""} >Russian</p>
 
                     </div>
                 </ContentContainer>
