@@ -56,10 +56,10 @@
         }
 
         div[data-active="active"] {
-            border-bottom: 2px solid $footer-background;
+            border-bottom: 2px solid $main-color;
 
             a {
-                color: $footer-background !important;
+                color: $main-color !important;
             }
         }
 

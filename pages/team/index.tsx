@@ -6,7 +6,6 @@ import { GenInTouch } from "@/components/GetInTouch/GetInTouch"
 import { Preview } from "@/components/Preview/Preview"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
-import { RedLine } from "@/components/RedLine/RedLine"
 import { useTranslation } from "react-i18next"
 import styles from "../../styles/team.module.scss"
 
@@ -22,7 +21,6 @@ export default function Team() {
                 <ContentContainer>
                     <Preview title={t("team.previewSlogan")} description={t("team.previewText") as string} />
                 </ContentContainer>
-                <RedLine />
                 <DarkContainer>
                     <ContentContainer>
                         <Line dark={true} title={t("team.ourTeam")} />
@@ -60,7 +58,6 @@ export default function Team() {
                         </div>
                     </ContentContainer>
                 </DarkContainer>
-                <RedLine />
                 <ContentContainer>
                     <GenInTouch />
                 </ContentContainer>

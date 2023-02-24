@@ -35,15 +35,15 @@ export default function Contacts() {
                         <div id="contact-form" className={styles.scrollId} >0</div>
                         <div className={styles.left_block}>
                             <h2>{t("contact.tellUs")}</h2>
-                            <p className={styles.left_block_small}></p>
+                            <p className={styles.left_block_small}>Send a request or contact with us:</p>
                             <div className={styles.left_box}>
                                 <p className={styles.left_box_placeholder}>{t("form.email") + ":"}</p>
                                 <a href="mailto:info@moramora-soft.com" className={styles.left_box_text}>info@moramora-soft.com</a>
                             </div>
-                            <div className={styles.left_box}>
+                            {/* <div className={styles.left_box}>
                                 <p className={styles.left_box_placeholder}>{t("form.phone") + ":"}</p>
                                 <a href="tel:+48 965 857 124" className={styles.left_box_text}>+48 965 857 124</a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className={styles.form_wrap}>
                             <Form />

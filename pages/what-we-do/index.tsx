@@ -5,7 +5,6 @@ import { GenInTouch } from "@/components/GetInTouch/GetInTouch"
 import { Preview } from "@/components/Preview/Preview"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
-import { RedLine } from "@/components/RedLine/RedLine"
 import { useTranslation } from "react-i18next"
 import styles from "../../styles/whatwedo.module.scss"
 
@@ -18,7 +17,6 @@ export default function WhatWeDo() {
                 <ContentContainer>
                     <Preview title={t("whatwedo.previewSlogan")} description={t("whatwedo.previewText") as string} />
                 </ContentContainer>
-                <RedLine />
                 <DarkContainer>
                     <ContentContainer>
                         <Line dark={true} title={t("whatwedo.servicesLabel")} />
@@ -68,7 +66,6 @@ export default function WhatWeDo() {
                         </div>
                     </ContentContainer>
                 </DarkContainer>
-                <RedLine />
                 <DarkContainer light={true}>
                     <ContentContainer>
                         <Line title={t("whatwedo.workLabel")} />

@@ -7,7 +7,6 @@ import { PaddingContainer } from "@/components/PaddingContainer/PaddingContainer
 import { GenInTouch } from "@/components/GetInTouch/GetInTouch"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
-import { RedLine } from "@/components/RedLine/RedLine"
 import { useTranslation } from "react-i18next"
 import { useObserverElement } from "@/hooks/useObserverElement"
 import { StartScreen } from "@/components/StartScreen/StartScreen"
@@ -43,7 +42,6 @@ export default function Main() {
             <p className={styles.description_white_text}>{t("home.descriptionWhiteBlock")}</p>
           </ContentContainer>
         </DarkContainer>
-        <RedLine />
         <DarkContainer light={darkLight}>
           <ContentContainer>
             <Line dark={!darkLight} title={t("home.label2")} />
@@ -117,7 +115,6 @@ export default function Main() {
             </div>
           </ContentContainer>
         </DarkContainer>
-        <RedLine />
         <ContentContainer>
           <GenInTouch />
         </ContentContainer>

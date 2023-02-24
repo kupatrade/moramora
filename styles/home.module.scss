@@ -188,6 +188,11 @@
             .home_what_title {
                 font-size: 60px;
                 line-height: 73px;
+                transition: color .3s ease;
+
+                [dark-dark-style="true"] & {
+                    color: $main-color !important;
+                }
 
                 @media(max-width: $large) {
                     font-size: 40px;
@@ -251,7 +256,7 @@
                 font-family: $poppis-light;
 
                 [dark-dark-style="true"] & {
-                    color: $footer-background !important;
+                    color: $main-color !important;
                 }
             }
 
@@ -279,7 +284,7 @@
             svg {
                 path {
                     [dark-dark-style="true"] & {
-                        fill: $footer-background !important;
+                        fill: $main-color !important;
                     }
                 }
             }

@@ -73,7 +73,7 @@ $default-font: "Montserrat-Regular";
     @media(hover: hover) {
         &:hover {
             span {
-                background: $footer-background;
+                background: $main-color;
             }
 
             span:first-child {
