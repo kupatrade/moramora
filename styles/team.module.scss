@@ -30,13 +30,22 @@
 
     .pictures_card {
         cursor: pointer;
+        transition: all .4s ease;
+        padding: 20px;
 
         @media(hover: hover) {
             &:hover {
-                img {
-                    scale: 1.1;
+                scale: 1.1;
+                background: $main-color;
+
+                .box_image {
+                    overflow: auto;
                 }
             }
+        }
+
+        @media (max-width: $phone) {
+            padding: 15px;
         }
 
         .box_image {
@@ -44,9 +53,10 @@
             width: 100%;
 
             img {
+                transition: all .4s ease;
                 width: 100%;
                 height: auto;
-                transition: all .4s ease;
+
             }
         }
 

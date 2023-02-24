@@ -5,6 +5,7 @@ import { GenInTouch } from "@/components/GetInTouch/GetInTouch"
 import { Preview } from "@/components/Preview/Preview"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
+import { RedLine } from "@/components/RedLine/RedLine"
 import { useTranslation } from "react-i18next"
 import style from "../../styles/about.module.scss"
 
@@ -17,6 +18,7 @@ export default function About() {
                 <ContentContainer>
                     <Preview title={t("about.previewSlogan")} description={t("about.previewText") as string} />
                 </ContentContainer>
+                <RedLine />
                 <DarkContainer>
                     <ContentContainer>
                         <Line dark={true} title={t("about.aboutUsLabel")} />
@@ -30,6 +32,7 @@ export default function About() {
                         </div>
                     </ContentContainer>
                 </DarkContainer>
+                <RedLine />
                 <ContentContainer>
                     <GenInTouch />
                 </ContentContainer>

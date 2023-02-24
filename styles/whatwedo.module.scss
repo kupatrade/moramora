@@ -4,7 +4,7 @@
 
 .common_container {
     width: 100%;
-    background: $footer-background;
+    background: $main-color;
     padding: 177px 0;
 
     @media(max-width: $large) {
@@ -87,7 +87,7 @@
             .first_square {
                 width: 100%;
                 animation: squareBalans 12s linear infinite;
-
+                stroke: $main-color !important;
             }
 
             .second_squere {
@@ -297,7 +297,7 @@
 
 @keyframes squareBalans {
     0% {
-        opacity: .4;
+        // opacity: .4;
         transform: rotateZ(0deg);
     }
 
@@ -306,7 +306,7 @@
     }
 
     100% {
-        opacity: .4;
+        // opacity: .4;
         transform: rotateZ(360deg);
     }
 }

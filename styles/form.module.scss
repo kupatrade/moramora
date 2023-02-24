@@ -159,7 +159,7 @@
 
             .send_btn {
                 width: 100%;
-                background-color: $footer-background;
+                background-color: $main-color;
                 color: $footer-text-color;
                 gap: 8px;
                 transition: all .3s ease-in;
@@ -216,7 +216,7 @@
                 top: 0;
                 transition: all .3s ease-in;
                 transform: rotateX(-90deg) translateZ(25px);
-                background-color: $main-color;
+                background-color: $footer-background;
                 color: $html-background;
                 border: 1px solid $main-color;
                 gap: 8px;
