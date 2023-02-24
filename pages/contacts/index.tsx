@@ -33,7 +33,18 @@ export default function Contacts() {
                 <ContentContainer>
                     <div className={styles.form_container}>
                         <div id="contact-form" className={styles.scrollId} >0</div>
-                        <h2>{t("contact.tellUs")}</h2>
+                        <div className={styles.left_block}>
+                            <h2>{t("contact.tellUs")}</h2>
+                            <p className={styles.left_block_small}></p>
+                            <div className={styles.left_box}>
+                                <p className={styles.left_box_placeholder}>{t("form.email") + ":"}</p>
+                                <a href="mailto:info@moramora-soft.com" className={styles.left_box_text}>info@moramora-soft.com</a>
+                            </div>
+                            <div className={styles.left_box}>
+                                <p className={styles.left_box_placeholder}>{t("form.phone") + ":"}</p>
+                                <a href="tel:+48 965 857 124" className={styles.left_box_text}>+48 965 857 124</a>
+                            </div>
+                        </div>
                         <div className={styles.form_wrap}>
                             <Form />
                         </div>
