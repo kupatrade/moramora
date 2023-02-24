@@ -49,11 +49,42 @@
         padding-top: 100px;
     }
 
-    h2 {
-        font-size: 64px;
+    .left_block {
+        h2 {
+            font-size: 64px;
+        }
+
+        .left_block_small {
+            margin: 24px 0 28px 0;
+            color: $dark-grey;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .left_box {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            .left_box_placeholder {
+                margin-bottom: 8px;
+                color: $dark-grey;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .left_box_text {
+                font-size: 20px;
+                line-height: 24px;
+                color: $footer-background;
+                cursor: pointer;
+            }
+        }
     }
 
-    h2,
+
+
+    .left_block,
     .form_wrap {
         width: 48%;
     }
@@ -66,13 +97,15 @@
         align-items: center;
         gap: 50px;
 
-        h2,
+        .left_block,
         .form_wrap {
             width: 100%;
         }
 
-        h2 {
-            font-size: 54px;
+        .left_block {
+            h2 {
+                font-size: 54px;
+            }
         }
     }
 
@@ -80,24 +113,54 @@
         padding: 20px 0 80px 0;
         gap: 30px;
 
-        h2 {
-            font-size: 36px;
+        .left_block {
+            h2 {
+                font-size: 36px;
+            }
+
+            .left_block_small {
+                font-size: 12px;
+                line-height: 15px;
+                margin: 24px 0 16px 0;
+            }
+
+            .left_box {
+                display: flex;
+                gap: 7px;
+                align-items: baseline;
+
+                .left_box_placeholder {
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin: 0;
+                }
+
+                .left_box_text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
         }
+
     }
 
     @media(max-width: $phone) {
         padding: 29px 0 70px 0;
 
-        h2 {
-            font-size: 32px;
+        .left_block {
+            h2 {
+                font-size: 32px;
+            }
         }
     }
 
     @media(max-width: $small-phone) {
         padding: 24px 0 60px 0;
 
-        h2 {
-            font-size: 18px;
+        .left_block {
+            h2 {
+                font-size: 18px;
+            }
         }
     }
 }
