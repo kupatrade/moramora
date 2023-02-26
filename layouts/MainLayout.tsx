@@ -60,6 +60,7 @@ export const MainLayout = ({
                 <meta name="theme-color" content="#ffffff"></meta>
 
                 <meta name="google-site-verification" content="eUVvmcOsFtiuaQbLuBvDYTYOGXaRNzZFUEkApEt-0aU" />
+
             </Head>
             <main data-theme={theme} className={loading ? "loading" : ""}>
                 {errorPage ? false : <Header transparent={headerTransparent} />}

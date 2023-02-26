@@ -62,23 +62,23 @@
         "workLabel": "Процесс работы",
         "firstServiceBlock": {
             "title": "Web & Mobile apps",
-            "text1": "Services",
-            "text2": "Payments",
+            "text1": "Android",
+            "text2": "IOS",
             "text3": "eCommerce",
-            "text4": "Custom apps"
+            "text4": "SPA/PWA"
         },
         "secondServiceBlock": {
             "title": "UX & Product design",
-            "text1": "Services",
-            "text2": "Payments",
-            "text3": "eCommerce",
-            "text4": "Custom apps"
+            "text1": "Brending",
+            "text2": "Gaming",
+            "text3": "Web/Mobile",
+            "text4": "Graphic"
         },
         "thirdServiceBlock": {
             "title": "Product development",
             "text1": "Services",
             "text2": "Payments",
-            "text3": "eCommerce",
+            "text3": "B2B/B2C",
             "text4": "Custom apps"
         },
         "firstProcessBlock": {
