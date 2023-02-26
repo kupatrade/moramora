@@ -10,8 +10,8 @@
         "adress": {
             "pl": {
                 "country": "Poland",
-                "street": "ul. Krucza 51",
-                "city": "Warszawa, 00-022"
+                "street": "ul. Krucza 50",
+                "city": "Warszawa, 00-024"
             },
             "bel": {
                 "country": "Belarus",
@@ -33,26 +33,26 @@
     },
     "contact": {
         "pre1": "We work around the world find us here",
-        "officess": "Officess",
+        "officess": "Offices",
         "getintouch": "Get in touch",
         "tellUs": "Tell us about your project",
         "smallText": "Send a request or contact with us"
     },
     "team": {
         "previewSlogan": "We are a  team of specialists around the world",
-        "previewText": "Our employees work best because they can create where they feel most comfortable",
+        "previewText": "Our employees are best of the best because they can create wherever they feel most comfortable",
         "ourTeam": "Our team"
     },
     "getInTouchBlock": {
         "getInTouch": "Get in touch",
-        "pre": "Interested working with us?"
+        "pre": "Interested to work with us?"
     },
     "about": {
         "previewSlogan": "We help your business achieve new goals",
         "previewText": "Clients come to us when they have a great idea, but need a team of experts to help them bring it to life",
         "aboutUsLabel": "About us",
         "leftText": "The best talent, no matter where you are",
-        "rightText": "MoraMora company was founded not so long ago. The actual idea came suddenly as one of the respectable wholesale trading companies was looking for a contractor to implement a quite large and ambitious project - to develop their own custom sales managing system from zero level. From the first days we successfully managed to gather together the team of enthusiastic professionals who a contractor to implement a quite large and ambitious project - to develop their own custom sales managing system from zero level. From the first days we successfully managed to gather together the team of enthusiastic professionals"
+        "rightText": "MoraMora is a quite young but very ambitious full cycle software development company. We have already created several unique digital solutions for B2B and B2C enterprises. Our company are professionals with a deep background and great experience in custom software. We have a team of developers, project managers, business analysts, UX/UI designers who have been gathered together in order to provide the best services and innovative technologies to our customers all over the world! Each of our projects is a unique mix of individual approach, broad outlook, talent and deep professionalism. We seek not trivial solutions for every client based on his vision of the task, his wishes and needs. Our motto: never give up, be a head...!"
     },
     "whatwedo": {
         "previewSlogan": "We create custom digital product for each company",
@@ -62,23 +62,23 @@
         "workLabel": "Work process",
         "firstServiceBlock": {
             "title": "Web & Mobile apps",
-            "text1": "Services",
-            "text2": "Payments",
+            "text1": "Android",
+            "text2": "Ios",
             "text3": "eCommerce",
-            "text4": "Custom apps"
+            "text4": "SPA/PWA"
         },
         "secondServiceBlock": {
             "title": "UX & Product design",
-            "text1": "Services",
-            "text2": "Payments",
-            "text3": "eCommerce",
-            "text4": "Custom apps"
+            "text1": "Brending",
+            "text2": "Gaming",
+            "text3": "Web/Mobile",
+            "text4": "Graphic"
         },
         "thirdServiceBlock": {
             "title": "Product development",
             "text1": "Services",
             "text2": "Payments",
-            "text3": "eCommerce",
+            "text3": "B2B/B2C",
             "text4": "Custom apps"
         },
         "firstProcessBlock": {
@@ -89,17 +89,17 @@
         "secondProcessBlock": {
             "title": "Concept",
             "number": "02",
-            "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
+            "description": "We will have an in-depth look at your briefing and evaluate whether the project fits both parties' conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
         },
         "thirdProcessBlock": {
             "title": "Design",
             "number": "03",
-            "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
+            "description": "We will create an initial design of the project and build a foundational architecture to solve your business challenges and to be compatible to your existing ecosystem"
         },
         "fourthProcessBlock": {
             "title": "Development",
             "number": "04",
-            "description": "We will have an in-depth looks at your briefing and evaluate whether the project fits both parties conditions and requirements. If it’s a match, we will have a meeting to discuss how to proceed."
+            "description": "We will develop a unique digital solution for your business taking into account all your current needs and requirements. We will test the created system for fault tolerance. And will make sure you are completely satisfied with a final version of custom software for your business."
         }
     },
     "home": {
@@ -109,16 +109,16 @@
         "btnNext": "Learn more ",
         "whatBox1": {
             "title": "Software & App Development",
-            "description": "Our software developers will take your ideas to the next innovation level, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services so you can reach your audience."
+            "description": "Our software developers will take your ideas to the next innovation level. We offer a comprehensive set of IT services to help you grow your business. With our experienced teams we create the most challenging and effective solutions."
         },
         "whatBox2": {
             "title": "Website Design & Development",
-            "description": "Our software developers will take your ideas to the next innovation level, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services so you can reach your audience."
+            "description": "Our UX/UI designers will bring fresh trends to your web infrastructure, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services, so you can reach your audience."
         },
         "whatBox3": {
             "title": "Branding",
-            "description": "Our software developers will take your ideas to the next innovation level, from automation to artificial intelligence we are here to help. Through our complete website solutions we provide web translation services so you can reach your audience."
+            "description": "Our branding specialists will bring your business to an unreachable level. With a strategic approach, we help companies operate better in the digital age. We use our knowledge of the impact of technology on business processes."
         },
-        "animeMainText": "Design. Developing. Branding."
+        "animeMainText": "Design… Developing… Branding…"
     }
 }

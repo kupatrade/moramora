@@ -11,7 +11,7 @@ export const Footer = () => {
         <footer className={styles.footer} >
             <ContentContainer>
                 <div className={styles.address}>
-                    <svg className={styles.herovo} width="340" height="47" viewBox="0 0 340 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className={styles.another_logo} width="340" height="47" viewBox="0 0 340 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_113_257" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="0" y="0" width="166" height="47">
                             <path d="M149.517 7.65137H142.528L126.208 45.9072H134.096L145.792 17.7618L150.416 28.9653H147.696L144.704 35.7967H153.408L157.551 45.9072H165.376L149.517 7.65137Z" fill="black" />
                             <path d="M0 45.907V0H7.072L22.304 19.9477L36.992 0H44.064V45.907H36.992V12.0233L22.304 30.8779L7.072 12.0233V45.907H0Z" fill="black" />

@@ -6,13 +6,14 @@ import { Preview } from "@/components/Preview/Preview"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
 import { useTranslation } from "react-i18next"
+import { metadata } from "@/data/meta"
 import styles from "../../styles/whatwedo.module.scss"
 
 
 export default function WhatWeDo() {
     const { t } = useTranslation()
     return (
-        <MainLayout>
+        <MainLayout title={metadata.whatWeDo.title} description={metadata.whatWeDo.description}>
             <PaddingContainer>
                 <ContentContainer>
                     <Preview title={t("whatwedo.previewSlogan")} description={t("whatwedo.previewText") as string} />

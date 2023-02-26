@@ -6,6 +6,7 @@ import { Preview } from "@/components/Preview/Preview"
 import { Line } from "@/components/Line/Line"
 import { Form } from "@/components/Form/Form"
 import { useTranslation } from "react-i18next"
+import { metadata } from "@/data/meta"
 import styles from "../../styles/contact.module.scss"
 
 const Map = dynamic(() => import("../../components/Map/Map"), { ssr: false })
@@ -13,7 +14,7 @@ const Map = dynamic(() => import("../../components/Map/Map"), { ssr: false })
 export default function Contacts() {
     const { t } = useTranslation()
     return (
-        <MainLayout>
+        <MainLayout title={metadata.contacts.title} description={metadata.contacts.description}>
             <PaddingContainer>
                 <ContentContainer>
                     <Preview title={t("contact.pre1")} />

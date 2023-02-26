@@ -6,13 +6,14 @@ import { Preview } from "@/components/Preview/Preview"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
 import { useTranslation } from "react-i18next"
+import { metadata } from "@/data/meta"
 import style from "../../styles/about.module.scss"
 
 
 export default function About() {
     const { t } = useTranslation()
     return (
-        <MainLayout>
+        <MainLayout title={metadata.about.title} description={metadata.about.description}>
             <PaddingContainer>
                 <ContentContainer>
                     <Preview title={t("about.previewSlogan")} description={t("about.previewText") as string} />

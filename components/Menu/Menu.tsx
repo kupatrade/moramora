@@ -54,10 +54,10 @@ export const Menu = () => {
 
                         <p
                             onClick={() => setLanguage("bel")}
-                            data-lang={language === "bel" ? "active" : ""} >Belarussian</p>
+                            data-lang={language === "bel" ? "active" : ""} >Беларуская</p>
                         <p
                             onClick={() => setLanguage("rus")}
-                            data-lang={language === "rus" ? "active" : ""} >Russian</p>
+                            data-lang={language === "rus" ? "active" : ""} >Русский</p>
 
                     </div>
                 </ContentContainer>

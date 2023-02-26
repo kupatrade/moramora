@@ -7,6 +7,7 @@ import { Preview } from "@/components/Preview/Preview"
 import { DarkContainer } from "@/components/DarkContainer/DarkContainer"
 import { Line } from "@/components/Line/Line"
 import { useTranslation } from "react-i18next"
+import { metadata } from "@/data/meta"
 import styles from "../../styles/team.module.scss"
 
 import photo1 from "../../public/photo/photo1.png"
@@ -16,7 +17,7 @@ import photo3 from "../../public/photo/photo3.png"
 export default function Team() {
     const { t } = useTranslation()
     return (
-        <MainLayout>
+        <MainLayout title={metadata.team.title} description={metadata.team.description}>
             <PaddingContainer>
                 <ContentContainer>
                     <Preview title={t("team.previewSlogan")} description={t("team.previewText") as string} />
@@ -33,7 +34,7 @@ export default function Team() {
                                         src={photo1} alt="photo1" />
                                 </div>
                                 <p className={styles.name}>Alex Vork</p>
-                                <p className={styles.pro}>Founder</p>
+                                <p className={styles.pro}>Business Analyst</p>
                             </div>
                             <div className={styles.pictures_card}>
                                 <div className={styles.box_image}>
