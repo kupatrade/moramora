@@ -30,16 +30,18 @@ export default function Team() {
                                 <div className={styles.box_image}>
                                     <Image
                                         placeholder="blur"
+                                        onContextMenu={(e) => e.preventDefault()}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         src={photo1} alt="photo1" />
                                 </div>
                                 <p className={styles.name}>Alex Vork</p>
-                                <p className={styles.pro}>Business Analyst</p>
+                                <p className={styles.pro}>Business analyst</p>
                             </div>
                             <div className={styles.pictures_card}>
                                 <div className={styles.box_image}>
                                     <Image
                                         placeholder="blur"
+                                        onContextMenu={(e) => e.preventDefault()}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         src={photo2} alt="photo2" />
                                 </div>
@@ -50,6 +52,7 @@ export default function Team() {
                                 <div className={styles.box_image}>
                                     <Image
                                         placeholder="blur"
+                                        onContextMenu={(e) => e.preventDefault()}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         src={photo3} alt="photo3" />
                                 </div>

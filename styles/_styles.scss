@@ -155,6 +155,15 @@ $default-font: "Montserrat-Regular";
     }
 }
 
+%selection-text {
+    user-select: text !important;
+
+    &::selection {
+        background: $main-color !important;
+        color: $html-background;
+    }
+}
+
 @keyframes showHeader {
     0% {
         transform: translateY(-100%);

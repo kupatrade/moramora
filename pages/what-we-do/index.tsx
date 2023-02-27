@@ -46,10 +46,11 @@ export default function WhatWeDo() {
                                 <div className={styles.text_box}>
                                     <p className={styles.text_main}>{t("whatwedo.secondServiceBlock.title")}</p>
                                     <div className={styles.text_main_deteils_block}>
-                                        <p className={styles.text_main_deteils_text}>{t("whatwedo.secondServiceBlock.text1")}</p>
+                                        <p className={styles.text_main_deteils_text}>{t("whatwedo.secondServiceBlock.text4")}</p>
                                         <p className={styles.text_main_deteils_text}>{t("whatwedo.secondServiceBlock.text2")}</p>
                                         <p className={styles.text_main_deteils_text}>{t("whatwedo.secondServiceBlock.text3")}</p>
-                                        <p className={styles.text_main_deteils_text}>{t("whatwedo.secondServiceBlock.text4")}</p>
+                                        <p className={styles.text_main_deteils_text}>{t("whatwedo.secondServiceBlock.text1")}</p>
+
                                     </div>
                                     <div className={styles.line}></div>
                                 </div>

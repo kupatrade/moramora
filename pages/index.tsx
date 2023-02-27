@@ -62,6 +62,7 @@ export default function Main() {
                   </div>
                   <div className={styles.image_container}>
                     <Image
+                      onContextMenu={(e) => e.preventDefault()}
                       sizes="(max-width: 768px) 100vw,
                        (max-width: 1200px) 50vw,
                        33vw"
@@ -84,6 +85,7 @@ export default function Main() {
                   </div>
                   <div className={styles.image_container}>
                     <Image
+                      onContextMenu={(e) => e.preventDefault()}
                       sizes="(max-width: 768px) 100vw,
                      (max-width: 1200px) 50vw,
                      33vw"
@@ -105,6 +107,7 @@ export default function Main() {
                   </div>
                   <div className={styles.image_container}>
                     <Image
+                      onContextMenu={(e) => e.preventDefault()}
                       sizes="(max-width: 768px) 100vw,
                      (max-width: 1200px) 50vw,
                      33vw"

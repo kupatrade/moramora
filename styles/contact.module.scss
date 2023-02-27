@@ -71,14 +71,17 @@
                 color: $dark-grey;
                 font-size: 14px;
                 line-height: 17px;
+
             }
 
             .left_box_text {
+                @extend %selection-text;
                 font-size: 20px;
                 line-height: 24px;
                 color: $footer-background;
                 font-family: $poppis-medium;
                 cursor: pointer;
+
             }
         }
     }
