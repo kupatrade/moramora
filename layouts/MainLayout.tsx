@@ -60,6 +60,7 @@ export const MainLayout = ({
                 <meta name="theme-color" content="#ffffff"></meta>
 
                 <meta name="google-site-verification" content="eUVvmcOsFtiuaQbLuBvDYTYOGXaRNzZFUEkApEt-0aU" />
+                <meta name="msvalidate.01" content="24AFBDED032DF7AEE0E80FD54C9BE770" />
 
             </Head>
             <main data-theme={theme} className={loading ? "loading" : ""}>
